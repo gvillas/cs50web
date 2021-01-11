@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    width: 95%;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.links ul{
+    display: flex;
+    font-size: 14px;
+}
+.links li {
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.links li a {
+    text-decoration: none;
+    color: black;
+}
+.links li a:hover{
+    text-decoration: underline;
+}
+.logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+    transition: height 0.5s;
+}
+@media (min-height: 590px) {
+    .logo img {
+        height: 100px;
+    }
+    .logo {
+        height: 220px;
+    }
+    .searchform {
+        margin-top: 27px;
+    }
+}
+@media (max-height: 589px) {
+    .logo img {
+        height: 75px;
+    }
+    .logo {
+        height: 77px
+    }
+    .searchform {
+        margin-top: 15px;
+    }
+}
+.logo img {
+    transition: height 0.5s;
+    position: absolute;
+    bottom: 0px;
+}
+.searchform {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+}
+.searchbox {
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 85%;
+    justify-content: center;
+}
+form {
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+.images {
+    display: flex;
+    align-items: center;
+}
+#search {
+    position: absolute;
+    left: 15px;
+}
+#mic {
+    position: absolute;
+    right: 15px;
+}
+#input_field {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    outline: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#input_field:hover, #input_field:focus{
+    box-shadow: 0px 0px 20px -12px rgb(0, 0, 0);
+    border: none;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 28px;
+}
+#google_search, #feeling_lucky  {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 15px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;  
+    margin: 10px;  
+}
