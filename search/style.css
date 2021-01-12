@@ -84,15 +84,15 @@ form {
     display: flex;
     align-items: center;
 }
-#search {
+.search {
     position: absolute;
     left: 15px;
 }
-#mic {
+.mic {
     position: absolute;
     right: 15px;
 }
-#input_field {
+.input_field {
     width: 100%;
     height: 48px;
     border: 1px solid #dfe1e5;
@@ -102,9 +102,21 @@ form {
     padding-left: 40px;
     padding-right: 40px;
 }
-#input_field:hover, #input_field:focus{
-    box-shadow: 0px 0px 20px -12px rgb(0, 0, 0);
-    border: none;
+.input_field:hover, .input_field:focus {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.google_search:hover, .feeling_lucky:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.google_search:focus, .feeling_lucky:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
 }
 .buttons {
     display: flex;
@@ -112,8 +124,9 @@ form {
     align-items: center;
     height: 60px;
     margin-top: 28px;
+    outline: #1461f1;
 }
-#google_search, #feeling_lucky  {
+.google_search, .feeling_lucky  {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
