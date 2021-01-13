@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Advanced Search</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section>
-            <div class="links">
+        <header class="header_advanced">
+            <div class="links_advanced">
+                <img class="header_logo" src="google_logo.png" alt="Google">
                 <ul>
                     <li><a href="index.html">Google Search</a></li>
                 </ul>
             </div>
-        </section>
+        </header>
+        <div class="appbar">
+            <h3>Advanced Search</h3>
+        </div>
+        <div class="border"></div>
+        <div class="instructions">
+            <h4>Find pages with...</h4>
+            <h6>To do this in the search box. </h6>
+        </div>
+        <div class="form">
+            <form autocomplete="off" action="https://www.google.com/search?hl=en">
+                <div class="all_words">
+                    <h5>all these words:</h5>
+                    <div class="div_input">
+                        <input class="adv_input" type="text" name="as_q">    
+                    </div>
+                    <h6>
+                        <div class="normal">Type the important words:</div>
+                        <div class="spaced">tri-colour rat terrier</div>
+                    </h6>
+                </div>
+                <div class="exact_words">
+                    <h5>this exact word or phrase:</h5>
+                    <div class="div_input">
+                        <input class="adv_input" type="text" name="as_epq">    
+                    </div>
+                    <h6>
+                        <div class="normal">Put exact words in quotes:</div>
+                        <div class="spaced">"rat terrier"</div>
+                    </h6>
+                </div>
+                <div class="any_words">
+                    <h5>any of these words:</h5>
+                    <div class="div_input">
+                        <input class="adv_input" type="text" name="as_oq">    
+                    </div>
+                    <h6>
+                        <div class="normal">Type<span class="spaced">OR</span><span class="normal">all the words you want:</span></div>
+                        <div class="spaced">miniature OR standard</div>
+                    </h6>
+                </div>
+                <div class="none_words">
+                    <h5>none of these words:</h5>
+                    <div class="div_input">
+                        <input class="adv_input" type="text" name="as_eq">    
+                    </div>
+                    <h6>
+                        <div class="normal">Put a minus sign just before words that you don't want:<span</div>
+                        <div class="spaced">-rodent, -"Jack Russell"</div>
+                    </h6>
+                </div>
+                <div class="div_adv_submit">
+                    <input class="adv_submit" type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
