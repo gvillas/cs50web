@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
@@ -20,6 +20,8 @@
         <div class="searchform">
             <div class="searchbox">
                 <form autocomplete="off" action="http://google.com/search">
+                    <input type="hidden" name="gl" value="us">
+                    <input type="hidden" name="hl" value="en">
                     <div class="images">
                         <input class="input_field" type="text" name="q">
                         <img class="search" src="search.png" alt="search_icon">
